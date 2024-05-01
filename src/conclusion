@@ -1,0 +1,16 @@
+1->>>conclusion of react mouting->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+When a React component loads, the constructor is called first, initializing the component's state and props. Then, the render method is invoked, which returns a React element to be displayed on the DOM. Once the component is mounted, it fetches data from APIs or performs any necessary setup in the componentDidMount lifecycle method.
+
+As data is retrieved, the component's state is updated, triggering a re-render. This is where componentDidUpdate comes into play, allowing us to perform additional actions based on state changes or other updates.
+
+When navigating away from the page or unmounting the component, componentWillUnmount is called, giving us the opportunity to clean up any resources or subscriptions to prevent memory leaks.
+
+Understanding the lifecycle of a React component is crucial for building efficient and robust applications.
+
+2--->>>>>>>>>>>
+
+
+useEffect Execution: After the initial render, the useEffect hook is executed. Since the dependency array is empty ([]), the useEffect callback function will only run once after the initial render. This ensures that the effect is performed after the component has been initially rendered to the DOM.
+
+
+3------->
